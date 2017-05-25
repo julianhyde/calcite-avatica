@@ -191,7 +191,7 @@ Before you start:
 
 * Set up signing keys as described above.
 * Make sure you are using JDK 8 (not 7 or 9).
-* Check that `README`, `site/_docs/howto.md`
+* Check that `README`, `site/_docs/howto.md`, `site/_docs/docker_images.md`,
   and `docker/src/main/dockerhub/Dockerfile` have the correct version number.
 * Set `version.major` and `version.minor` in `pom.xml`.
 * Make sure that
@@ -407,7 +407,7 @@ Thanks to everyone who has contributed to this release.
 https://github.com/apache/calcite-avatica/blob/XXXX/site/_docs/history.md
 
 The commit to be voted upon:
-http://git-wip-us.apache.org/repos/asf/calcite/commit/NNNNNN
+http://git-wip-us.apache.org/repos/asf/calcite-avatica/commit/NNNNNN
 
 Its hash is XXXX.
 
@@ -476,8 +476,8 @@ Julian
 
 Use the [Apache URL shortener](http://s.apache.org) to generate
 shortened URLs for the vote proposal and result emails. Examples:
-[s.apache.org/calcite-1.2-vote](http://s.apache.org/calcite-1.2-vote) and
-[s.apache.org/calcite-1.2-result](http://s.apache.org/calcite-1.2-result).
+[s.apache.org/calcite-1.2-vote](http://s.apache.org/avatica-1.2-vote) and
+[s.apache.org/calcite-1.2-result](http://s.apache.org/avatica-1.2-result).
 
 
 ## Publishing a release (for Calcite committers)
@@ -547,8 +547,10 @@ svn ci
 The old releases will remain available in the
 [release archive](http://archive.apache.org/dist/calcite/).
 
+Publish the [Docker images](docker_images.md).
+
 Add a release note by copying
-[site/_posts/2015-11-10-release-1.5.0.md]({{ site.sourceRoot }}/site/_posts/2015-11-10-release-1.5.0.md),
+[site/_posts/2016-11-01-release-1.9.0.md]({{ site.sourceRoot }}/site/_posts/2016-11-01-release-1.9.0.md),
 generate the javadoc and copy to `site/target/apidocs` and `site/target/testapidocs`,
 [publish the site](#publish-the-web-site),
 and check that it appears in the contents in [news](http://localhost:4000/news/).
