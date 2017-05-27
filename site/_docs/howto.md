@@ -558,7 +558,7 @@ and check that it appears in the contents in [news](http://localhost:4000/news/)
 After 24 hours, announce the release by sending an email to
 [announce@apache.org](https://mail-archives.apache.org/mod_mbox/www-announce/).
 You can use
-[the 1.6.0 announcement](https://mail-archives.apache.org/mod_mbox/www-announce/201601.mbox/%3C8DB4C1E5-B322-4A33-8E8F-9858FA6A1119%40apache.org%3E)
+[the 1.8.0 announcement](https://mail-archives.apache.org/mod_mbox/www-announce/201606.mbox/%3C57559CC7.1000402@apache.org%3E)
 as a template. Be sure to include a brief description of the project.
 
 ## Publishing the web site (for Calcite committers)
