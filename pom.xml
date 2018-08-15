@@ -56,9 +56,6 @@ limitations under the License.
     <version.major>1</version.major>
     <version.minor>12</version.minor>
 
-    <!-- Don't fail the build for vulnerabilities below this threshold. -->
-    <failBuildOnCVSS>8</failBuildOnCVSS>
-
     <!-- This list is in alphabetical order. -->
     <bouncycastle.version>1.59</bouncycastle.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
@@ -796,7 +793,9 @@ limitations under the License.
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
             <configuration>
-              <failBuildOnCVSS>${failBuildOnCVSS}</failBuildOnCVSS>
+              <suppressionFiles>
+                <suppressionFile>${top.dir}/src/main/config/dependency-check/suppressions.xml</suppressionFile>
+              </suppressionFiles>
             </configuration>
             <executions>
               <execution>
